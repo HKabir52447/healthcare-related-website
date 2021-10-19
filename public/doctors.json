@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "MD. Humayun Kabir",
+    "about": "Cardiology is a branch of medicine that deals with the disorders of the heart as well as some parts of the circulatory system. The field includes medical diagnosis and treatment of congenital heart defects, coronary artery disease, heart failure, valvular heart disease and electrophysiology",
+    "depertment": "Cardiology",
+    "img": "https://bsmmu.edu.bd/public/uploads/images/Cardiology.jpg",
+    "doctor": "https://images.unsplash.com/photo-1537368910025-700350fe46c7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80"
+  },
+  {
+    "id": 2,
+    "name": "Salma Akter",
+    "about": "Dermatology is the branch of medicine dealing with the skin. It is a speciality with both medical and surgical aspects. A dermatologist is a specialist medical doctor who manages diseases related to skin, hair, nails, and some cosmetic problems.",
+    "depertment": "Dermatology",
+    "img": "https://bsmmu.edu.bd/public/uploads/images/Dermatology-and-Venereology.jpg",
+    "doctor": "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80"
+  },
+  {
+    "id": 3,
+    "name": "MD. Rayhan Subhan",
+    "about": "Endocrinology is the field of hormone-related diseases. An endocrinologist can diagnose and treat hormone problems and the complications that arise from them. Hormones regulate metabolism, respiration, growth, reproduction, sensory perception, and movement. ... Humans have over 50 different hormones.",
+    "depertment": "Endocrinology & Metabolism",
+    "img": "https://bsmmu.edu.bd/public/uploads/images/Endocrinology.jpg",
+    "doctor": "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80"
+  },
+  {
+    "id": 4,
+    "name": "MD. Monjurul Islam",
+    "about": "Gastroenterology is the branch of medicine focused on the digestive system and its disorders. Diseases affecting the gastrointestinal tract, which include the organs from mouth into anus, along the alimentary canal, are the focus of this speciality. Physicians practicing in this field are called gastroenterologists.",
+    "depertment": "Gastroenterology",
+    "img": "https://bsmmu.edu.bd/public/uploads/images/Gastroenterology.jpg",
+    "doctor": "https://images.unsplash.com/photo-1622253692010-333f2da6031d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=764&q=80"
+  },
+  {
+    "id": 5,
+    "name": "Azmain Molla",
+    "about": "Hematology is the branch of medicine concerned with the study of the cause, prognosis, treatment, and prevention of diseases related to blood",
+    "depertment": "Hematology",
+    "img": "https://bsmmu.edu.bd/public/uploads/images/Hematology.jpg",
+    "doctor": "https://images.unsplash.com/photo-1618498082410-b4aa22193b38?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+  },
+  {
+    "id": 6,
+    "name": "Mohona Akter",
+    "about": "Hepatology is the branch of medicine that incorporates the study of liver, gallbladder, biliary tree, and pancreas as well as management of their disorders",
+    "depertment": "Hepatology",
+    "img": "https://bsmmu.edu.bd/public/uploads/images/Hepatology.jpg",
+    "doctor": "https://images.unsplash.com/photo-1614608682850-e0d6ed316d47?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=676&q=80"
+  },
+  {
+    "id": 7,
+    "name": "Pervej Hossain",
+    "about": "Internal medicine or general internal medicine is the medical specialty dealing with the prevention, diagnosis, and treatment of internal diseases. Physicians specializing in internal medicine are called internists, or physicians in Commonwealth nations.",
+    "depertment": "Internal Medicine",
+    "img": "https://bsmmu.edu.bd/public/uploads/images/Internal-Medicine.jpg",
+    "doctor": "https://images.unsplash.com/photo-1622902046580-2b47f47f5471?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+  },
+  {
+    "id": 8,
+    "name": "Farnan Hossain",
+    "about": "Nephrology is a specialty of adult internal medicine and pediatric medicine that concerns the study of the kidneys, specifically normal kidney function and kidney disease, the preservation of kidney health, and the treatment of kidney disease, from diet and medication to renal replacement therapy.",
+    "depertment": "Nephrology",
+    "img": "https://bsmmu.edu.bd/public/uploads/images/Nephrology.jpg",
+    "doctor": "https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+  },
+  {
+    "id": 9,
+    "name": "Abdul Kaiyum",
+    "about": "Neurology is a branch of medicine dealing with disorders of the nervous system. Neurology deals with the diagnosis and treatment of all categories of conditions and disease involving the central and peripheral nervous systems, including their coverings, blood vessels, and all effector tissue, such as muscle.",
+    "depertment": "Neurology",
+    "img": "https://bsmmu.edu.bd/public/uploads/images/Neurology.jpg",
+    "doctor": "https://images.unsplash.com/photo-1576669801775-ff43c5ab079d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+  },
+  {
+    "id": 10,
+    "name": "Rasel Ahmed",
+    "about": "Rheumatology is a branch of medicine devoted to the diagnosis and therapy of rheumatic diseases. Physicians who have undergone formal training in rheumatology are called rheumatologists",
+    "depertment": "Rheumatology",
+    "img": "https://bsmmu.edu.bd/public/uploads/images/Rheumatology.jpg",
+    "doctor": "https://images.unsplash.com/photo-1612531385446-f7e6d131e1d0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+  },
+  {
+    "id": 11,
+    "name": "Alamgir Hossain",
+    "about": "Transfusion medicine (or transfusiology) is the branch of medicine that encompasses all aspects of the transfusion of blood and blood components including aspects related to hemovigilance. It includes issues of blood donation, immunohematology and other laboratory testing for transfusion-transmitted diseases, management and monitoring of clinical transfusion practices, patient blood management, therapeutic apheresis, stem cell collections, cellular therapy, and coagulation. Laboratory management and understanding of state and federal regulations related to blood products are also a large part of the field.",
+    "depertment": "Transfusion Medicine",
+    "img": "https://bsmmu.edu.bd/public/uploads/images/Transfusion-Medicine.jpg",
+    "doctor": "https://images.unsplash.com/photo-1582895361887-24daa40c8667?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1241&q=80"
+  },
+  {
+    "id": 12,
+    "name": "Jasin Akter",
+    "about": " The Respiratory Therapy Department helps patients breathe easier using treatments to preserve or improve the pulmonary or lung function of the patient. Respiratory Therapy provides treatment for emphysema, croup, congestive heart failure, pneumonia, atelectasis and chest traumas.",
+    "depertment": "Respiratory Medicine",
+    "img": "https://bsmmu.edu.bd/public/uploads/images/respiratory-medicin%20copy.jpg",
+    "doctor": "https://images.unsplash.com/photo-1601583789200-96cd7f385315?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80"
+  }
+]
