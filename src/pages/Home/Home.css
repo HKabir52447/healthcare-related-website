@@ -21,3 +21,13 @@
  .hospital{
      height: 600px;
  }
+ @media screen and (max-width:768px) and (min-width: 576px) {
+    .course-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media  screen and (max-width: 575px) {
+    .course-container{
+        grid-template-columns: 1fr;
+    }
+}

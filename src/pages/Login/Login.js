@@ -1,9 +1,28 @@
 import React from 'react';
+import { Link, useLocation, useHistory } from 'react-router-dom';
+import useAuth from '../../Hooks/useAuth';
 import './Login.css';
 
 const Login = () => {
+  const {signInUsingGoogle, signInUsingGithub} = useAuth();
+  const location = useLocation();
+  const history = useHistory();
+  const redirect_url = location.state?.from || '/home';
+  const handleGoogleLogin = () =>{
+    signInUsingGoogle()
+    .then(result => {
+      history.push(redirect_url)
+    })
+  }
+  const handleGithubLogin = () =>{
+    signInUsingGithub()
+    .then(result => {
+      history.push(redirect_url)
+    })
+  }
     return (
-        <div className='d-flex justify-content-center py-5 signin'>
+        <div  className='d-flex justify-content-center py-5 signin'>
+          <div>
             <form className="text-start px-5 py-3 border rounded-3">
         <h3 className="heading text-center">Please Sign in</h3>
         <div className="mb-3">
@@ -38,7 +57,30 @@ const Login = () => {
             </span>{" "}
           </button>
         </div>
+        <div className="text-center">
+            <h6 className="text-danger">
+              New user?{" "}
+              <span>
+                {" "}
+                <Link className="text-decoration-none" to="/signup">
+                  Sing up
+                </Link>{" "}
+              </span>{" "}
+            </h6>
+          </div>
       </form>
+      <div className="pb-5">
+        ========== OR =========
+        <div className="mt-3 d-flex justify-content-center">
+          <button onClick={handleGoogleLogin} className="btn btn-outline-primary fs-5 connect me-4">
+            Sign In With Google
+          </button>
+          <button onClick={handleGithubLogin} className="btn btn-outline-primary fs-5 connect me-4">
+            Sign In With GitHub
+          </button>
+        </div>
+      </div>
+        </div>
         </div>
     );
 };

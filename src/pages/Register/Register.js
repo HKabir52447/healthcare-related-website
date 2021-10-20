@@ -1,14 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// import initializeAuthentication from "../../Firebase/firebaseInitialize";
+import useAuth from "../../Hooks/useAuth";
+
 import "./Register.css";
 
-// initializeAuthentication();
-
 const Register = () => {
-    const googleSignIn = () => {
-
-    }
+  const {signInUsingGoogle, signInUsingGithub} = useAuth();
   return (
     <div className="register">
       <div className="d-flex justify-content-center py-5">
@@ -125,7 +122,7 @@ const Register = () => {
               </label>
             </div>
           </div>
-         
+
           <div className="mb-3 text-center">
             <button className="btn btn-outline-primary fs-5 connect">
               {" "}
@@ -136,17 +133,29 @@ const Register = () => {
             </button>
           </div>
 
-          <div className='text-center'>
-            <h6 className='text-danger'>Already have an account?  <span> <Link className='text-decoration-none' to='/signin'>Sing in</Link> </span> </h6>
+          <div className="text-center">
+            <h6 className="text-danger">
+              Already have an account?{" "}
+              <span>
+                {" "}
+                <Link className="text-decoration-none" to="/signin">
+                  Sing in
+                </Link>{" "}
+              </span>{" "}
+            </h6>
           </div>
         </form>
       </div>
-      <div className='pb-5'>
-          ========== OR =========
-          <div className='mt-3 d-flex justify-content-center'>
-          <button onClick={googleSignIn} className='btn btn-outline-primary fs-5 connect me-4'>Sign In With Google</button>
-          <button className='btn btn-outline-primary fs-5 connect'>Sign In With Email</button>
-          </div>
+      <div className="pb-5">
+        ========== OR =========
+        <div className="mt-3 d-flex justify-content-center">
+          <button onClick={signInUsingGoogle} className="btn btn-outline-primary fs-5 connect me-4">
+            Sign In With Google
+          </button>
+          <button onClick={signInUsingGithub} className="btn btn-outline-primary fs-5 connect me-4">
+            Sign In With GitHub
+          </button>
+        </div>
       </div>
     </div>
   );

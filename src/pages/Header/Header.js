@@ -2,8 +2,10 @@ import React from "react";
 import "./Header.css";
 import { NavLink } from "react-router-dom";
 import logo from '../../images/Medico-logo.png';
+import useAuth from "../../Hooks/useAuth";
 
 const Header = () => {
+  const {user, logOut} = useAuth();
   const activeStyle = {
     background: "#e10f28",
     color: "#fff",
@@ -81,16 +83,27 @@ const Header = () => {
                 </NavLink>
               </li>
               <li className="nav-item header-form">
-                <NavLink
+              
+                {user.email ? 
+               <NavLink onClick={logOut}
+               className="menu-link"
+               activeStyle={activeStyle}
+               to="/signin"
+             >
+               Sign Out
+             </NavLink>
+               :
+                  <NavLink
                   className="menu-link"
                   activeStyle={activeStyle}
                   to="/signin"
                 >
                   Sign In
-                </NavLink>
+                </NavLink>} <br/> <span>{user.displayName}</span>
               </li>
               <li className="nav-item">
-                <NavLink
+               
+               <NavLink
                   className="menu-link"
                   activeStyle={activeStyle}
                   to="/signup"

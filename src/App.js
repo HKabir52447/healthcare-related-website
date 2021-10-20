@@ -10,52 +10,67 @@ import Contact from "./pages/Contact/Contact";
 import Notfounding from "./pages/Notfounding/Notfounding";
 import Register from "./pages/Register/Register";
 import Login from "./pages/Login/Login";
+import ContextProvider from "./Context/ContextProvider";
+import PrivateRoute from "./pages/PrivateRoute/PrivateRoute";
+import ServiceDetails from "./pages/ServiceDetails/ServiceDetails";
+import userEvent from "@testing-library/user-event";
+import DoctorDetails from "./pages/DoctorDetails/DoctorDetails";
 
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
-        <Header></Header>
-        <Switch>
-          <Route exact path="/home">
-            {" "}
-            <Home></Home>{" "}
-          </Route>
-          <Route exact path="/services">
-            {" "}
-            <Services></Services>{" "}
-          </Route>
-          <Route exact path="/doctors">
-            {" "}
-            <Doctors></Doctors>{" "}
-          </Route>
-          <Route exact path="/about">
-            {" "}
-            <About></About>{" "}
-          </Route>
-          <Route exact path="/contact">
-            {" "}
-            <Contact></Contact>{" "}
-          </Route>
-          <Route exact path="/signin">
-            {" "}
-            <Login></Login>{" "}
-          </Route>
-          <Route exact path="/signup">
-            {" "}
-            <Register></Register>{" "}
-          </Route>
-          <Route exact path="/">
-            {" "}
-            <Home></Home>{" "}
-          </Route>
-          <Route>
-            {" "}
-            <Notfounding></Notfounding>{" "}
-          </Route>
-        </Switch>
-        <Footer></Footer>
-      </BrowserRouter>
+      <ContextProvider>
+        <BrowserRouter>
+          <Header></Header>
+          <Switch>
+            <Route exact path="/home">
+              {" "}
+              <Home></Home>{" "}
+            </Route>
+            <Route exact path="/services">
+              {" "}
+              <Services></Services>{" "}
+            </Route>
+            <PrivateRoute exact path="/serviceDetails">
+              {
+                <ServiceDetails></ServiceDetails>}
+            </PrivateRoute>
+            <PrivateRoute exact path="/doctorDetails">
+              {
+                <DoctorDetails></DoctorDetails>}
+            </PrivateRoute>
+            <Route exact path="/doctors">
+              {" "}
+              <Doctors></Doctors>{" "}
+            </Route>
+            <Route exact path="/about">
+              {" "}
+              <About></About>{" "}
+            </Route>
+            <Route exact path="/contact">
+              {" "}
+              <Contact></Contact>{" "}
+            </Route>
+            <Route exact path="/signin">
+              {" "}
+              <Login></Login>{" "}
+            </Route>
+            <Route exact path="/signup">
+              {" "}
+              <Register></Register>{" "}
+            </Route>
+            <Route exact path="/">
+              {" "}
+              <Home></Home>{" "}
+            </Route>
+            <Route>
+              {" "}
+              <Notfounding></Notfounding>{" "}
+            </Route>
+          </Switch>
+          <Footer></Footer>
+        </BrowserRouter>
+      </ContextProvider>
     </div>
   );
 }
