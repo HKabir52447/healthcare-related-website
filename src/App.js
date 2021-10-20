@@ -31,11 +31,11 @@ function App() {
               {" "}
               <Services></Services>{" "}
             </Route>
-            <PrivateRoute exact path="/serviceDetails">
+            <PrivateRoute exact path="/services/:id">
               {
                 <ServiceDetails></ServiceDetails>}
             </PrivateRoute>
-            <PrivateRoute exact path="/doctorDetails">
+            <PrivateRoute exact path="/doctors/:id">
               {
                 <DoctorDetails></DoctorDetails>}
             </PrivateRoute>

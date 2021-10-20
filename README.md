@@ -1,6 +1,6 @@
 # Medico Healthcare using React
 
-Visit our website [Create React App](https://medico-healthcare.web.app/).
+Visit our website [Medico Healthcare](https://medico-healthcare.web.app/).
 
 ## About this site
 * Medico is a health related website

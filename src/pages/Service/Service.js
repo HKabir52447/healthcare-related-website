@@ -1,9 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./Service.css";
 
 const Service = (props) => {
-  const { depertment, img } = props.services;
+  const { depertment, img, id} = props.services;
   return (
     <div className="service">
       <img className="img-fluid" src={img} alt={depertment} />
@@ -13,7 +13,7 @@ const Service = (props) => {
         qualitiful and experienced doctors.
       </p>
       <div className="text-center">
-        <Link to='/serviceDetails'>
+        <NavLink to={`/services/${props.services.id}`}>
           <button className="btn sub-heading px-4 py-1 details fs-4">
             {" "}
             Details{" "}
@@ -21,7 +21,7 @@ const Service = (props) => {
               <i class="fas fa-long-arrow-alt-right"></i>
             </span>{" "}
           </button>
-        </Link>
+        </NavLink>
       </div>
     </div>
   );

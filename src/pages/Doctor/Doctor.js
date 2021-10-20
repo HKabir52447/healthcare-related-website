@@ -1,17 +1,17 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, {  } from 'react';
+import { NavLink } from 'react-router-dom';
 import './Doctor.css';
 
+
 const Doctor = (props) => {
-    const {name, depertment, doctor} = props.doctor;
-   
+    const {name, depertment, doctor, id} = props.doctor;   
     return (
         <div className='doctor'>
             <img src={doctor} alt={name} className='img-fluid'/>
             <h4 className='name'>{name}</h4>
             <h6 className='pb-3'>Depertment of <span className='fs-4'>{depertment}</span> </h6>
             <div className="text-center">
-        <Link to='/doctorDetails'>
+        <NavLink to={`/doctors/${props.doctor.id}`}>
           <button className="btn sub-heading px-4 py-1 details fs-4 mb-3">
             {" "}
             Details{" "}
@@ -19,7 +19,7 @@ const Doctor = (props) => {
               <i class="fas fa-long-arrow-alt-right"></i>
             </span>{" "}
           </button>
-        </Link>
+        </NavLink>
       </div>
             <div className='social-media mx-2'> 
                 <a href='https://www.facebook.com/' target='blank'><i class="fab fa-facebook-f"></i></a>

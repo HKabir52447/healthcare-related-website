@@ -1,0 +1,11 @@
+.details-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    align-items: center;
+}
+@media screen and (max-width:576px) {
+    .details-content{
+        grid-template-columns: 1fr;
+    }
+}
